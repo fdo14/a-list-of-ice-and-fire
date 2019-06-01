@@ -1,0 +1,50 @@
+.book {
+  width: 100%;
+  background-color: $color-secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__container {
+    width:90%;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  &__title {
+    background-color: $color-tertiary;
+    padding: 1rem;
+    transform: skew(1deg, -1deg);
+  }
+
+  &__pages {
+    background-color: $color-tertiary;
+    padding: 1rem;
+    transform: skew(-1deg, 1deg);
+    margin-bottom: 2rem
+  }
+
+  &__character {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__back {
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    font-size: 5rem;
+    text-decoration: none;
+    color: $color-tertiary;
+    transition: all .2s;
+
+    &:hover {
+      transform: scale(1.25,1.25)
+    }
+  }
+}

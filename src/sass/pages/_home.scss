@@ -1,0 +1,63 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-secondary;
+
+  &__books {
+    margin-top: 2rem;
+    background-color: $color-primary;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__list {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__houses {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: $color-primary;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-tertiary;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3.5rem;
+    margin: 0 2rem;
+    outline: none;
+    transition: all .2s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.25,1.25)
+    }
+  }
+
+  &__filter {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    outline: none;
+    border: none;
+  }
+}
